@@ -16,9 +16,7 @@ def main():
 
     pygame.font.init()
 
-    pygame.mixer.music.load("src/audio/song.mp3")
-    pygame.mixer.music.set_volume(0.05)
-    pygame.mixer.music.play(-1)
+
 
     clock = pygame.time.Clock()
     state = "MENU"
@@ -64,8 +62,7 @@ def main():
             else:
                 state = "EXIT"
 
-    # if state is exit then stop music and quit game
-    pygame.mixer.music.stop()
+    # if state is exit then quit game
     pygame.quit()
 
 
